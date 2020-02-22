@@ -4,8 +4,8 @@
 namespace reverse_string {
 
 std::string reverse_string(const std::string &str) {
-    std::string result(str);
-    std::reverse(result.begin(), result.end());
+    std::string result;
+    result.assign(str.rbegin(), str.rend());
     return result;  
 }
 
